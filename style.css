@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.quiz-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    width: 350px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Question */
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Correct Answer */
+.correct {
+    background-color: #00c853;
+    color: white;
+}
+
+/* Wrong Answer */
+.wrong {
+    background-color: #ff1744;
+    color: white;
+}
+
+/* Next Button */
+#next-btn {
+    background: #ffd54f;
+    color: black;
+    font-weight: bold;
+}
+
+#next-btn:hover {
+    background: #ffca28;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: #00e5ff;
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+
+/* Score */
+#score {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
